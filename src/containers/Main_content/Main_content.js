@@ -8,6 +8,7 @@ import mram_png from '../../img/countries/mram.png'
 import kanada_png from '../../img/countries/kanada.png'
 import NY_png from '../../img/countries/NY.png'
 import ScrollAnimation from 'react-animate-on-scroll'
+import { NavLink } from 'react-router-dom'
 
 const Main_content = () => {
 
@@ -17,7 +18,9 @@ const Main_content = () => {
          <div className={classes.main_content__container}>
             <div className={classes.main_content__text}>
                <div className={classes.main_content__buttPerpose + ' ' + classes.classRight + ' ' + classes._animItems + ' ' + classes.overflow + ' ' + classes.button}>
-                  <a href="" >Предложения</a>
+                  <NavLink
+                     to="/other_offers"
+                  >Предложения</NavLink>
                </div>
                <div className={classes.content__subtitle + ' ' + classes.classLeft + ' ' + classes._animItems + ' ' + classes.overflow}>Увидь то, что не увидишь из своего окна, <br /> почувствуй солёные брызги водопада, <br /> сравни архитектуру запада и востока, <br /> окунись в традиции незнакомых стран</div>
             </div>

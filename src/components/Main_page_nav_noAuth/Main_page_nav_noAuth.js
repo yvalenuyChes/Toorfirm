@@ -6,10 +6,9 @@ import Tabs from '../Tabs/Tabs'
 import classNames from 'classnames'
 
 
-const Main_nav = props => {
+const Main_nav = () => {
 
    const [mouseEnterMainPage, isMouseEnteredMain] = useState(false)
-   const [mouseEnterCountries, isMouseEnteredCountries] = useState(false)
    const [popupOpen, isPopupOpen] = useState(false)
    const [openNav, toggleNavOpen] = useState(false)
    const pageWidth = window.innerWidth

@@ -7,8 +7,8 @@ import classNames from 'classnames'
 const Main_page_nav_auth = () => {
 
    const [mouseEnterMainPage, isMouseEnteredMain] = useState(false)
-   const [mouseEnterCountries, isMouseEnteredCountries] = useState(false)
    const [openNav, toggleNavOpen] = useState(false)
+   const pageWidth = window.innerWidth
 
 
    const classesForNav = classNames({
@@ -22,9 +22,11 @@ const Main_page_nav_auth = () => {
    })
 
 
-   openNav
-      ? document.body.style.overflowY = "hidden"
-      : document.body.style.overflowY = "scroll"
+   if (pageWidth < 767) {
+      openNav
+         ? document.body.style.overflowY = "hidden"
+         : document.body.style.overflowY = "scroll"
+   }
 
 
 
@@ -76,58 +78,6 @@ const Main_page_nav_auth = () => {
                            >Информация</a>
                         </li>
                         <li className="nav__list_item"></li>
-                     </ul>
-                     : null
-                  }
-               </div>
-               <div className="nav__item"
-                  onClick={() => isMouseEnteredCountries(!mouseEnterCountries)}
-               >
-                  <span className="nav__link">Выбор страны</span>
-                  {mouseEnterCountries
-                     ? <ul className="nav__list">
-                        <li className="nav__list_item">
-                           <NavLink
-                              to="/niderlands"
-                              className="nav__link"
-                              onClick={() => { toggleNavOpen(!openNav) }}
-                           >Нидерланды</NavLink>
-                        </li>
-                        <li className="nav__list_item">
-                           <NavLink
-                              to="/maldives"
-                              className="nav__link"
-                              onClick={() => { toggleNavOpen(!openNav) }}
-                           >Мальдивы</NavLink>
-                        </li>
-                        <li className="nav__list_item">
-                           <NavLink
-                              to="/vengria"
-                              className="nav__link"
-                              onClick={() => { toggleNavOpen(!openNav) }}
-                           >Венгрия</NavLink>
-                        </li>
-                        <li className="nav__list_item">
-                           <NavLink
-                              to="/marble_canyon"
-                              className="nav__link"
-                              onClick={() => { toggleNavOpen(!openNav) }}
-                           >Мраморный каньон</NavLink>
-                        </li>
-                        <li className="nav__list_item">
-                           <NavLink
-                              to="/new_york"
-                              className="nav__link"
-                              onClick={() => { toggleNavOpen(!openNav) }}
-                           >Нью Йорк</NavLink>
-                        </li>
-                        <li className="nav__list_item">
-                           <NavLink
-                              to="/kanada"
-                              className="nav__link"
-                              onClick={() => { toggleNavOpen(!openNav) }}
-                           >Канада</NavLink>
-                        </li>
                      </ul>
                      : null
                   }
