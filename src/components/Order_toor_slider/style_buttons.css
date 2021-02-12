@@ -1,0 +1,55 @@
+
+
+.slick-arrow {
+   position: absolute;
+   top: 50%;
+   display: none;
+   align-items: center;
+   justify-content: center;
+   width: 40px;
+   color: #fff;
+   text-align: center;
+   opacity: 0.5;
+   height: 50px;
+   transform: translateY(-50%);
+   background: rgba(0, 0, 0, .5);
+ }
+
+ .slider__control_show {
+   display: flex;
+ }
+
+ .slick-arrow:hover,
+ .slick-arrow:focus{
+  background: rgba(0, 0, 0, .7);
+   transition: 0.5s all ease;
+   text-decoration: none;
+   outline: 0;
+   opacity: .9;
+ }
+
+ .slick-prev {
+   z-index:10;
+   left: 0;
+ }
+
+ .slick-next {
+   right: 0;
+ }
+
+ .slick-arrow::before {
+   content: '';
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   background: transparent no-repeat center center;
+   background-size: 100% 100%;
+ }
+
+ .slick-prev::before {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+ }
+
+ .slick-next::before {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+ }

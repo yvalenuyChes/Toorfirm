@@ -1,0 +1,166 @@
+.why{
+	text-align: center;
+	padding: 0px 20px;
+	margin: 0 auto;
+	max-width: 800px;
+
+	&__title{
+		font-size: 30px;
+		padding: 0 0 40px 0;
+	}
+
+	&__container{
+		justify-content: space-between;
+		display: flex;
+		margin-bottom: 50px;
+	}
+
+	.squeres{
+	position: relative;
+	flex: 1 1 25%;
+}
+
+.squeres::before{
+	content: '';
+	display: block;
+	padding-top: 100%;
+}
+
+&__item{
+	margin: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+	.tenYears{
+		span{
+			display: inline-block;
+			padding-top: 20%;
+			font-size: 30px;
+		}
+	}
+
+
+	h3{
+		padding-top: 40px;
+		font-size: 24px;
+		}
+
+	}
+
+}
+
+.why__itemSubtitle{
+	padding-top: 50px;
+	font-size: 18px;
+	}
+
+.why__itemImg{
+	margin: 0 auto;
+	padding-top: 20%;
+	max-height: 80px;
+	max-width: 80px;
+	img{
+		width: 100%;
+		height: 100%;
+	}
+}	
+
+.why__itemTitle{
+	font-family: 'Oswald', sans-serif;
+}
+ 
+@media(max-width:768){
+	.squeres{
+		width: 80%;
+	}
+
+	.why__item{
+		position: relative;
+	}
+
+	.why__itemImg{
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform:translate(-50%, -50%);
+		img{
+			height: 100px !important;
+			width: 100px !important;
+		}
+	}
+	
+	.squeres::before{
+		padding-top: 0%;
+	}
+}
+
+@media (max-width: 660px) {
+	.why__itemImg{
+		padding-top: 30% !important;
+	img{
+		height: 60px !important;
+		width: 60px !important;
+	}
+}
+}
+
+@media (max-width: 600px) {
+
+	.why__itemTitle {
+		font-size: 18px !important;
+		padding-top: 5px !important;
+	}
+
+	.why__itemSubtitle{
+		font-size: 12px !important;
+		padding-top: 5px !important;
+	}
+
+	.why__itemImg{
+		img{
+			height: 40px !important;
+			width: 40px !important;
+			}	
+		}
+}
+
+@media (max-width: 460px) {
+	.why__itemTitle {
+	font-size: 20px !important;
+	padding-top: 5px !important;
+	}
+
+	.why__itemSubtitle{
+		font-size: 15px !important;
+		padding-top: 5px !important;
+	}
+
+	.why__container{
+		display: block;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 0px !important;
+	}
+
+	.why__itemImg{
+		img{
+			padding-top: 10% !important;
+			height: 80px !important;
+			width: 80px !important;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.why__itemImg{
+		img{
+			padding-top: 10% !important;
+			height: 50px !important;
+			width: 50px !important;
+		}
+	}
+}

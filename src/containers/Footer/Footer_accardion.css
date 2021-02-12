@@ -1,0 +1,30 @@
+.MuiPaper-root{
+   position: relative;
+   background-color: #339999 !important;
+   border-radius: 0 !important;
+   width: 500px;
+   margin: 0 auto !important;
+   box-shadow: none !important;
+}
+
+.css-o4b71y-MuiAccordionSummary-content{
+   flex-grow: 0 !important;
+}
+
+
+.MuiPaper-root::before{
+   height: 0 !important;
+}
+
+.MuiAccordionSummary-content{
+   text-transform: uppercase !important;
+   color: #fff;
+   font-family: "Oswald", sans-serif;
+   font-size: 20px !important;
+}
+
+@media(max-width:501px){
+   .MuiPaper-root{
+      width: 200px;
+   }
+}
