@@ -30,6 +30,7 @@
 	}
 
 	&__buttPerpose{
+		transition: ease .5s all;
 		cursor: pointer;
 		display: flex;
 		align-items: center;
@@ -42,6 +43,7 @@
 
 		&:hover{
 			background-color: aqua;
+			transition: ease .5s all;
 		}
 
 		a{

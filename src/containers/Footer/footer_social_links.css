@@ -1,0 +1,20 @@
+i{
+   transition: .3s ease;
+   font-size: calc(20px + 15 * ((100vw - 320px) / (1280 - 320)));
+   color: white;
+   }
+
+   .fa-vk:hover{
+      transition: .3s ease;
+      color: dodgerblue;
+   }
+
+   .fa-twitter:hover{
+      transition: .3s ease;
+      color:lightskyblue;
+   }
+
+   .fa-instagram:hover{
+      transition: .3s ease;
+      color:darkmagenta;
+   }

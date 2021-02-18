@@ -7,6 +7,7 @@ import AccordionDetails from '@material-ui/core/AccordionDetails'
 import play_market from '../../img/apps/play market.png'
 import apple from '../../img/apps/apple.png'
 import './Footer_accardion.css'
+import './footer_social_links.css'
 
 const Footer = () => {
 
@@ -153,13 +154,13 @@ const Footer = () => {
                <h3 className={classes.copyraiting}>2019-2020 © Alise in Wonderland</h3>
                <div className={classes.footer__socialLinks}>
                   <div className={classes.vk + ' ' + classes.socialLink}>
-                     <a href="##"><i className={classes.fab + ' ' + classes.faVk}></i></a>
+                     <a href="##"><i className="fab fa-vk"></i></a>
                   </div>
                   <div className={classes.twitter + ' ' + classes.socialLink}>
-                     <a href="##"><i className={classes.faTwitter + ' ' + classes.fab}></i></a>
+                     <a href="##"><i className="fa-twitter fab"></i></a>
                   </div>
                   <div className={classes.insta + ' ' + classes.sociaLlink}>
-                     <a href="##"><i className={classes.fab + ' ' + classes.faInstagram}></i></a>
+                     <a href="##"><i className="fab fa-instagram"></i></a>
                   </div>
                </div>
             </div>
