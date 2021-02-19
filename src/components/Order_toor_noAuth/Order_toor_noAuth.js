@@ -5,10 +5,10 @@ const Order_toor_noAuth = () => {
 
    return (
       <>
-         <div className={classes.order_toor_noAuth__body}>
+         <div className={classes.order_toor_noAuth__body} id="toor__order">
             <span
                className={classes.order_toor_noAuth__text}
-            >Чтобы заказать билет вы должны быть авторизированны</span>
+            >Чтобы заказать билет Вы должны быть авторизованы</span>
          </div>
       </>
    )

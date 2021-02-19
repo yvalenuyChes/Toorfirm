@@ -15,7 +15,6 @@ const About_company = () => {
             <div className={classes.why__container}>
                <ScrollAnimation
                   animateIn='fadeInLeft'
-                  animateOut='fadeOutLeft'
                   className={classes.squeres}
                >
                   {/* <div className={classes.squeres}> */}
@@ -31,7 +30,6 @@ const About_company = () => {
                <ScrollAnimation
                   className={classes.squeres}
                   animateIn='fadeInRight'
-                  animateOut='fadeOutRight'
                >
                   <div className={classes.why__item}>
                      <h3 className={classes.why__itemTitle}>Надежность</h3>
@@ -46,7 +44,6 @@ const About_company = () => {
                <ScrollAnimation
                   className={classes.squeres}
                   animateIn='fadeInLeft'
-                  animateOut='fadeOutLeft'
                >
                   <div className={classes.why__item}>
                      <h3 className={classes.why__itemTitle}>Работаем для вас</h3>
@@ -59,7 +56,6 @@ const About_company = () => {
                <ScrollAnimation
                   className={classes.squeres}
                   animateIn='fadeInRight'
-                  animateOut='fadeOutRight'
                >
                   <div className={classes.why__item}>
                      <h3 className={classes.why__itemTitle}>Стабильность</h3>
