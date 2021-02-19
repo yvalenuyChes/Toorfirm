@@ -8,7 +8,7 @@ const Content_img = (props) => {
          <div className={props.img__wrapper}>
             <div className={props.isLimited}>
                <div className={props.blockImg}>
-                  <img src={props.imgSrc} className={props.img_countries} />
+                  <img src={props.imgSrc} className={props.img_countries} alt="toorfirmImg" />
                   <div className={props.block_text}>
                      <h2 className={props.content__title}>{props.title}</h2>
                      <div className={props.content__text}>

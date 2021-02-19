@@ -48,13 +48,13 @@ export default function SimpleSlider() {
       }
    }
 
-   const showTickets = () => {
-      return Object.keys()
-   }
+   // const showTickets = () => {
+   //    return Object.keys()
+   // }
 
    //{showTickets()} это добавь в личный кабинет
 
-   const [ticketList, addTicketOnList] = useState([])
+   // const [ticketList, addTicketOnList] = useState([])
 
    const [placeOfDepartureBus, changePlaceOfDepartureBus] = useState('')
    const [departureBus, changeDepartureBus] = useState('')
@@ -74,84 +74,81 @@ export default function SimpleSlider() {
 
 
    const onChangeHendlerPlaceOfDepartureBus = event => {
-      const placeOfDepartureBus = changePlaceOfDepartureBus(prev => event.target.value)
+      changePlaceOfDepartureBus(prev => event.target.value)
 
    }
 
    const onChangeHendlerDepartureBus = event => {
-      const departureBus = changeDepartureBus(prev => event.target.value)
+      changeDepartureBus(prev => event.target.value)
 
    }
 
    const onChangeHendlerArrivedBus = event => {
-      const arrivedBus = changeArrivedBus(prev => event.target.value)
+      changeArrivedBus(prev => event.target.value)
 
    }
 
    const onChangeHendlerNumberAdultBus = event => {
-      const numberAdultBus = changeNumberAdultBus(prev => event.target.value)
+      changeNumberAdultBus(prev => event.target.value)
 
    }
 
    const onChangeHendlerNubmerKidsBus = event => {
-      const nubmerKidsBus = changeNumberKidsBus(prev => event.target.value)
+      changeNumberKidsBus(prev => event.target.value)
 
    }
 
    const onChangeHendlerPlaceOfDepartureTrain = event => {
-      const placeOfDepartureTrain = changeplaceOfDepartureTrain(prev => event.target.value)
+      changeplaceOfDepartureTrain(prev => event.target.value)
 
    }
 
    const onChangeHendlerDepartureTrain = event => {
-      const departureTrain = changeDepartureTrain(prev => event.target.value)
+      changeDepartureTrain(prev => event.target.value)
 
    }
 
    const onChangeHendlerArrivedTrain = event => {
-      const arrivedTrain = changeArrivedTrain(prev => event.target.value)
+      changeArrivedTrain(prev => event.target.value)
 
    }
 
    const onChangeHendlerNumberAdultTrain = event => {
-      const numberAdultTrain = changeNumberAdultTrain(prev => event.target.value)
+      changeNumberAdultTrain(prev => event.target.value)
 
    }
 
    const onChangeHendlerNumberKidsTrain = event => {
-      const numberKidsTrain = changeNumberKidsTrain(prev => event.target.value)
+      changeNumberKidsTrain(prev => event.target.value)
 
    }
 
    const onChangeHendlerPlaceOfDeparturePlane = event => {
-      const placeOfDeparturePlane = changePlaceOfDeparturePlane(prev => event.target.value)
+      changePlaceOfDeparturePlane(prev => event.target.value)
 
    }
 
    const onChangeHendlerDeparturePlain = event => {
-      const departurePlain = changeDeparturePlain(prev => event.target.value)
+      changeDeparturePlain(prev => event.target.value)
 
    }
 
    const onChangeHendlerArrivedPlane = event => {
-      const arrivedPlane = changeArrivedPlane(prev => event.target.value)
+      changeArrivedPlane(prev => event.target.value)
 
    }
 
    const onChangeHendlerNumberAdultPlane = event => {
-      const numberAdultPlane = changeNumberAdultPlane(prev => event.target.value)
+      changeNumberAdultPlane(prev => event.target.value)
 
    }
 
    const onChangeHendlerNubmerKidsPlane = event => {
-      const nubmerKidsPlane = changeNumberKidsPlane(prev => event.target.value)
+      changeNumberKidsPlane(prev => event.target.value)
 
    }
 
    return (
-      // <div className={classes.bookAnim + ' ' + classes._animItems}>
-      //    <div className={classes.bookAnim__content}>
-      //       <div className={classes.orderToor__body}>
       <div className={classes.slider}>
          <Slider {...settings}>
             <form
@@ -312,9 +309,5 @@ export default function SimpleSlider() {
             </form>
          </Slider>
       </div>
-      //       </div>
-      //    </div>
-      // </div>
-
    )
 }

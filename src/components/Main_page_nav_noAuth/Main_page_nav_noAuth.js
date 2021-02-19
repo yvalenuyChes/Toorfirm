@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './Main_page_nav.css'
-import { NavLink } from 'react-router-dom'
 import Modal from '@material-ui/core/Modal'
 import Tabs from '../Tabs/Tabs'
 import classNames from 'classnames'
