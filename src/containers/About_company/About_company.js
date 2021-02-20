@@ -15,9 +15,7 @@ const About_company = () => {
             <div className={classes.why__container}>
                <ScrollAnimation
                   animateIn='fadeInLeft'
-                  className={classes.squeres}
-               >
-                  {/* <div className={classes.squeres}> */}
+                  className={classes.squeres}>
                   <div className={classes.why__item}>
                      <h3 className={classes.why__itemTitle}>Огромный выбор</h3>
                      <div className={classes.why__itemSubtitle}>Мы предоставляем широкий <br /> выбор стран и городов</div>
@@ -25,7 +23,6 @@ const About_company = () => {
                         <img src={planet} alt="" />
                      </div>
                   </div>
-                  {/* </div> */}
                </ScrollAnimation>
                <ScrollAnimation
                   className={classes.squeres}

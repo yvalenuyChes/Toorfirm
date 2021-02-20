@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import classes from './Toor_order.module.scss'
-// import Slider from '../../components/Order_toor_slider/Order_toor_slider'
 import SimpleSlider from '../../components/Order_toor_slider/Component.slider.2'
 
 

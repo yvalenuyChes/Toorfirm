@@ -7,22 +7,6 @@ import { connect } from 'react-redux'
 import { auth } from '../../store/actions/auth'
 
 const Tabs = props => {
-
-   //!
-
-   // const [userName, setUserName] = useState({
-   //    value: '',
-   //    // errorMessage: 'Введите корректный пароль',
-   //    // valid: false,
-   //    // touched: false,
-   //    // validation: {
-   //    //    required: true,
-   //    //    minLength: 2
-   //    // }
-   // })
-
-
-
    const [firstActivateTab, toggleFirstActivateTab] = useState(true)
    const [secondActivateTab, toggleSecondActivateTab] = useState(false)
 
@@ -151,14 +135,6 @@ const Tabs = props => {
                         value={password}
                      />
                   </div>
-                  {/* <div className={classes.inputBox}>
-                     <Input
-                        onChange={onChangeHendlerName}
-                        label="Введите свое имя"
-                        type="text"
-                        value={userName.value}
-                     />
-                  </div> */}
                   <button
                      className={classes.tab_button}
                      onClick={registerHendler}

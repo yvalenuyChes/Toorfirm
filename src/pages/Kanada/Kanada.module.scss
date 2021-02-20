@@ -3,7 +3,6 @@
    width: 100%;
 }
 
-// общий стиль для страницы
 .page{
   position: absolute;
   width: 100%;
@@ -17,7 +16,6 @@
 
   }
 }
-// общие стили гор
 .paralax__montain{
   position: fixed;
   width: 100%;
@@ -26,15 +24,12 @@
   left: 0;
 
 }
-// модификаторы
-// тут нужно менять размеры оберток для нужного отображения
 .paralax__montain_1{
    background: url('../../img/parralax_countrie/m_1.png') 0 0 / cover no-repeat; 
 } 
 
 .paralax__montain_2{
    z-index: -1;
-   // 45% это размер картинки, 0 0 это позиция обертки
    background: url('../../img/parralax_countrie/m_2.png') bottom right / 45% no-repeat; 
 }
 

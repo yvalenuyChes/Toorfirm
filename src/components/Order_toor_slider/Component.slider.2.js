@@ -27,7 +27,6 @@ export default function SimpleSlider() {
 
       const ticketItem = {
          params: [
-            // {country: countrieBus,
             { label: "Откуда отправляетесь", value: placeOfDepartureBus },
             { label: "Отбытие", value: departureBus },
             { label: "Прибытие", value: arrivedBus },
@@ -47,15 +46,6 @@ export default function SimpleSlider() {
          console.log(e)
       }
    }
-
-   // const showTickets = () => {
-   //    return Object.keys()
-   // }
-
-   //{showTickets()} это добавь в личный кабинет
-
-   // const [ticketList, addTicketOnList] = useState([])
-
    const [placeOfDepartureBus, changePlaceOfDepartureBus] = useState('')
    const [departureBus, changeDepartureBus] = useState('')
    const [arrivedBus, changeArrivedBus] = useState('')

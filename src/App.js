@@ -16,7 +16,6 @@ function App() {
         <Route path="/" component={Main_page} exact />
         <Route path="/kanada" component={Kanada} exact />
         <Route path="/not__found" component={Page_404} exact />
-        {/* <Route path="/ordered_tikets" component={Private_office} exact /> */}
         <Redirect to={"/not__found"} />
       </Switch>
     </Wrapper>
